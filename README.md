@@ -1,4 +1,4 @@
-# Chartr App Clone
+xx# Chartr App Clone
 
 ## Description
 This repository contains a clone of the Chartr app, a public transportation tracking application. It replicates the user interface and basic functionality of the original app. designed with the same user interface and navigation but populated with manually entered data. This clone does not include backend integration, live bus locations, routes, or stops. It is designed primarily to showcase the UI/UX and app navigation.
@@ -8,7 +8,7 @@ This repository contains a clone of the Chartr app, a public transportation trac
 - Splash Screen
 - Main Screen with four fragments:
   - Home
-  - Tickets
+  - Ticket
   - Passes
   - Profile
 - Buy Ticket and Pass Activity
