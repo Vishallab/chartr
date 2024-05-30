@@ -16,8 +16,15 @@ This repository contains a clone of the Chartr app, a public transportation trac
 - QR Code Activity
 - Custom Dialog Box
 
+
+
 ## Screenshots
-(Include screenshots here)
+(![2024-05-31 00-55-19 (online-video-cutter com)](https://github.com/Vishallab/chartr/assets/74778363/6dd2c29b-e88c-47d6-8763-ddf1e5396561)
+
+
+
+
+https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6
 
 
 
