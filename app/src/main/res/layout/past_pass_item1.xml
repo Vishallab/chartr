@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_past_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_8"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/standard_16"
+        android:layout_marginEnd="@dimen/standard_16" app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rv_pass"
+            android:paddingBottom="@dimen/standard_16"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingEnd="@dimen/standard_16">
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_16"
+                android:text="DTC Daily Pass"
+                android:fontFamily="@font/inter_regular"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_pass_type"
+                android:background="@drawable/default_border_ac"
+                android:text="AC"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_12"
+                android:fontFamily="@font/inter_regular"
+                android:paddingStart="@dimen/standard_8"
+                android:paddingEnd="@dimen/standard_8"
+                android:layout_marginEnd="@dimen/standard_16"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_bookingTime"
+                android:text="23-05-2024 11:156:23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_1"
+                android:fontFamily="@font/inter_regular"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_totalFare"
+                android:text="₹50.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_pass_type"
+                android:fontFamily="@font/inter_regular"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_passID"
+                android:text="DP230520247971927b37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_totalFare"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_regular"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_ticket_expire"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_invalid"
+            app:tint="#F80101" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

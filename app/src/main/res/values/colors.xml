@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    //status bar
+    <color name="StatusBar">#1bbabf</color>
+
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="blue_bus">#0000b3</color>
+    <color name="blue_ticket_bg">#2e81eb</color>
+
+
+    <color name="light_blue_bus">#1bbabf</color>
+    <color name="light_blue_ticket_bg">#1bbabf</color>
+
+    <color name="green_bus">#80c41c</color>
+    <color name="green_ticket_bg">#219653</color>
+
+    <color name="orange_bus">#ea7136</color>
+    <color name="orange_ticket_bg">#f28627</color>
+
+    <color name="red_bus">#eb4b4b</color>
+    <color name="red_ticket_bg">#d63a3a</color>
+
+
+
+
+</resources>
+
+

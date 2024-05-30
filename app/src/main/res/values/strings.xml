@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chartr</string>
+
+    <string name="google_maps_key" translatable="false">ADD YOUR KEY</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_8"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_back"
+        android:layout_marginStart="@dimen/standard_16"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_light"
+        android:text="Contact Us"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginLeft="@dimen/standard_16"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="@dimen/standard_16"
+        android:fontFamily="@font/inter_regular"
+        android:lineSpacingExtra="3dp"
+        android:text="If you have any questions or suggestions, do not hesitate to contact us at My Github or linkedin.\nreach me at ncepvishal@gmail.com"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="@dimen/standard_16">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/inter_medium"
+            android:text="Edit Profile"
+            android:textColor="#1c2626"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top_bar"
+        android:layout_marginStart="@dimen/standard_16"
+        android:layout_marginTop="@dimen/standard_16"
+        android:layout_marginEnd="@dimen/standard_16"
+        android:layout_marginBottom="@dimen/standard_16"
+        android:background="@color/white"
+        android:padding="@dimen/standard_16">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"
+            android:text="Vishal Mishra"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_Change_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/inter_regular"
+            android:text="Change"
+            android:textColor="@color/red_ticket_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="@dimen/standard_8"
+            android:fontFamily="@font/inter_medium"
+            android:text="Phone number"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_2"
+            android:fontFamily="@font/inter_regular"
+            android:text=""
+            android:textColor="#939292"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_change_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_2"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/inter_regular"
+            android:text="Verify"
+            android:textColor="@color/red_ticket_bg"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone_number"
+            android:layout_marginTop="@dimen/standard_8"
+            android:fontFamily="@font/inter_medium"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_3"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"
+            android:text="Male"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_Change_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_3"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/inter_regular"
+            android:text="Change"
+            android:textColor="@color/red_ticket_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gender"
+            android:layout_marginTop="@dimen/standard_8"
+            android:fontFamily="@font/inter_medium"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_4"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"
+            android:text="22"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_Change_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_4"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/inter_regular"
+            android:text="Change"
+            android:textColor="@color/red_ticket_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Change_age"
+            android:layout_marginTop="@dimen/standard_8"
+            android:fontFamily="@font/inter_medium"
+            android:text="UID"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_UID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_id"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/tv_Change_gender"
+            android:ellipsize="middle"
+            android:fontFamily="@font/inter_regular"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#8A8888"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_copy_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_id"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/inter_regular"
+            android:paddingTop="2dp"
+            android:text="Copy"
+            android:textColor="@color/red_ticket_bg"
+            android:textIsSelectable="true"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

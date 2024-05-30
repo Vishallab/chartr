@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_top_bar">
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/standard_8"
+                android:layout_marginTop="@dimen/standard_8"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                android:padding="@dimen/standard_8"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_back_arrow"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_12"
+                android:layout_marginTop="14dp"
+                android:layout_toEndOf="@+id/ib_back"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Search"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_1"
+                android:layout_marginTop="@dimen/standard_8"
+                android:layout_marginBottom="@dimen/standard_8">
+
+                <EditText
+                    android:id="@+id/edit_source_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/standard_16"
+                    android:layout_marginEnd="@dimen/standard_8"
+                    android:layout_toStartOf="@+id/ll_opt"
+                    android:background="@drawable/grey_round_box"
+                    android:drawableStart="@drawable/dot_12dp"
+                    android:drawablePadding="@dimen/standard_16"
+                    android:ellipsize="end"
+                    android:hint="My location"
+                    android:inputType="text"
+                    android:maxWidth="488dp"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/standard_16"
+                    android:paddingEnd="36dp" />
+
+
+
+                <EditText
+                    android:id="@+id/edit_destination_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/edit_source_stop"
+                    android:layout_marginStart="@dimen/standard_16"
+                    android:layout_marginTop="@dimen/standard_8"
+                    android:layout_marginEnd="@dimen/standard_8"
+                    android:layout_toStartOf="@+id/ll_opt"
+                    android:background="@drawable/grey_round_box"
+                    android:drawableStart="@drawable/ic_stops"
+                    android:drawablePadding="@dimen/standard_16"
+                    android:ellipsize="end"
+                    android:hint="Where do you want to go"
+                    android:inputType="text"
+                    android:maxWidth="488dp"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/standard_16"
+                    android:paddingEnd="36dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_opt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_swap"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="@dimen/standard_16"
+                        android:background="@drawable/grey_round_box"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_swap" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+           </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_no_result_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_choose_on_map"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_regular"
+            android:minLines="2"
+            android:text="oops No Routes find \nsome Map error occurs !!"
+            android:textAlignment="center"
+            android:textColor="#1c2626"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_on_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:background="@color/white"
+            android:paddingTop="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_16"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_16"
+                    android:src="@drawable/ic_map"
+                    app:tint="@color/blue_ticket_bg"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_16"
+                    android:layout_marginEnd="@dimen/standard_16"
+                    android:layout_toEndOf="@+id/iv_map"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_regular"
+                    android:maxLines="1"
+                    android:text="Choose on map"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+   </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

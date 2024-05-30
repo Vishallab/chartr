@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+android:paddingTop="4dp"
+android:paddingBottom="4dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_last_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ticket_background"
+            android:elevation="4dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_ticket_top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="1.6dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1.6dp"
+                android:background="@color/light_blue_bus" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bus_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_ticket_top_bar"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_bus"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/bus_light_blue_circle" />
+
+
+                    <TextView
+                        android:id="@+id/tv_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_bus"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="VIP"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bus_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_route"
+                        android:layout_toEndOf="@+id/iv_bus"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="Delhi 00001"
+                        android:textColor="#605E5E"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ticket_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/round_plain_box"
+                        android:fontFamily="@font/inter_medium"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Success"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_top"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_starting_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_medium"
+                        android:maxLength="20"
+                        android:text="Delhi West"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_toEndOf="@+id/tv_starting_stop"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/ic_back_arrow"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_ending_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/iv_arrow"
+                        android:fontFamily="@font/inter_medium"
+                        android:maxLength="20"
+                        android:text="Delhi South"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2dp"
+                    android:layout_below="@+id/rl_mid"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#BFBFBF" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line"
+                    android:layout_marginBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_booking_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="01 Jan,24 | 01:01 PM"
+                        android:textColor="#686666" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/tv_fare_per_ticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="₹25.0 x 1 = ₹22.5"
+                            android:textColor="#1c2626"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ticket_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv_fare_per_ticket"
+                            android:fontFamily="@font/inter_bold"
+                            android:text=""
+                            android:textColor="#1c2626"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_payable_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv_ticket_count"
+                            android:fontFamily="@font/inter_bold"
+                            android:text=""
+                            android:textColor="#1c2626"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_ticket_expire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_invalid"
+                    app:tint="#F80101" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="@dimen/standard_8">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ib_back"
+            android:fontFamily="@font/inter_medium"
+            android:paddingTop="0dp"
+            android:text="All Tickets"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_ticket1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/ticket1"
+                    layout="@layout/past_ticket_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_top"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/ticket2"
+                layout="@layout/past_ticket_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+            <include
+                android:id="@+id/ticket3"
+                layout="@layout/past_ticket_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+            <include
+                android:id="@+id/ticket4"
+                layout="@layout/past_ticket_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ticket5"
+                layout="@layout/past_ticket_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ticket6"
+                layout="@layout/past_ticket_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ticket7"
+                layout="@layout/past_ticket_item6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ticket8"
+                layout="@layout/past_ticket_item7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ticket9"
+                layout="@layout/past_ticket_item8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/ticket10"
+                layout="@layout/past_ticket_item9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:visibility="visible" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

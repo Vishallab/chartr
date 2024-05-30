@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_ticket_bg">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/ic_cross"
+        app:tint="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/standard_16"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/tv_activePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_16"
+            android:text="no_active_pass_available"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rv_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_16"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_pass_expire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/standard_16"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_invalid"
+                app:tint="@color/red_ticket_bg" />
+
+            <TextView
+                android:id="@+id/tv_agency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_regular"
+                android:text="Transport dept. of Delhi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_agency"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="DTC Daily Pass"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_totalFare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_agency"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_totalFare"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Passenger Name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_passengerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_1"
+                android:text="Vishal Mishra"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Pass Type"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_passType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_2"
+                android:layout_alignParentEnd="true"
+                android:text="AC"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_passengerName"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Passenger Age"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_passengerAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_4"
+                android:text="22"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_passengerAge"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Booking_Time"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_bookingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_5"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_regular"
+                android:singleLine="true"
+
+                android:text="09-03-2002 09:03:02"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <!--    time is my bithday 😂😂        -->
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bookingTime"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Validity Time"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_validityTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_6"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_regular"
+                android:singleLine="true"
+                android:text="09-03-2002 23:59:59"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_passID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_validityTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#444444"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rv_showQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_passID"
+                android:background="@color/red_ticket_bg"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/tv_showQR"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_qr_code"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_showQR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Show QR code"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_showQR"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:textAlignment="center"
+                android:text="Valid in AC and Non-AC DTC \nBusses.\nNon-Transferable Pass"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_10"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_dtc_logo" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/standard_8"
+        app:srcCompat="@drawable/pred_champ_2" />
+</RelativeLayout>

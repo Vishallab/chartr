@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/googleMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/rl_top_bar"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="96dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_top_bar"
+            android:padding="@dimen/standard_8">
+
+               <TextView
+                android:id="@+id/tv_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/inter_medium"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="@dimen/standard_8"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                   android:text="Bus stops near you"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:padding="@dimen/standard_8"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_info"
+                />
+        </RelativeLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_curLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/standard_16"
+            android:layout_marginBottom="180dp"
+            app:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_current_location"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+    <!--        ye jo h neche jo botm sheet ayegi vo h  -->
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/bottom_sheet_stop_info_around_me" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

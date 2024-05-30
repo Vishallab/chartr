@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="40dp" android:width="40dp" android:viewportWidth="40" android:viewportHeight="40">
+    <path android:fillColor="#2e81eb" android:pathData="M20,0L20,0A20,20 0,0 1,40 20L40,20A20,20 0,0 1,20 40L20,40A20,20 0,0 1,0 20L0,20A20,20 0,0 1,20 0z"/>
+    <path android:fillColor="#ffffff" android:pathData="M12,24.263C12,25.097 12.39,25.845 13,26.366V27.579C13,28.365 13.67,29 14.5,29C15.33,29 16,28.365 16,27.579V27.105H24V27.579C24,28.356 24.67,29 25.5,29C26.32,29 27,28.365 27,27.579V26.366C27.61,25.845 28,25.097 28,24.263V14.79C28,11.474 24.42,11 20,11C15.58,11 12,11.474 12,14.79V24.263ZM15.5,25.211C14.67,25.211 14,24.576 14,23.789C14,23.003 14.67,22.368 15.5,22.368C16.33,22.368 17,23.003 17,23.789C17,24.576 16.33,25.211 15.5,25.211ZM24.5,25.211C23.67,25.211 23,24.576 23,23.789C23,23.003 23.67,22.368 24.5,22.368C25.33,22.368 26,23.003 26,23.789C26,24.576 25.33,25.211 24.5,25.211ZM26,19.526H14V14.79H26V19.526Z"/>
+</vector>

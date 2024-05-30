@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_bottom_sheet_background"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="286dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageView
+        android:id="@+id/iv_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Rectangle"
+        app:srcCompat="@drawable/ic_rectangle_bottom_sheet" />
+
+    <LinearLayout
+        android:id="@+id/rl_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_rect"
+        android:padding="@dimen/standard_16">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Select your bus"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_suggestion"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/standard_16"
+        android:paddingEnd="@dimen/standard_16">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_16"
+            android:layout_marginBottom="@dimen/standard_8"
+            android:fontFamily="@font/inter_bold"
+            android:text="Enter Bus Number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:id="@+id/radio_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/rg_dl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_pc"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="@dimen/standard_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/bus_number"
+                        android:button="@drawable/bus_number"
+                        android:fontFamily="@font/inter_regular"
+                        android:paddingStart="@dimen/standard_16"
+                        android:paddingTop="11dp"
+                        android:paddingEnd="@dimen/standard_16"
+                        android:paddingBottom="11dp"
+                        android:text="DL1PC"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_pd"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="@dimen/standard_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/bus_number"
+                        android:button="@drawable/bus_number"
+                        android:fontFamily="@font/inter_regular"
+                        android:paddingStart="@dimen/standard_16"
+                        android:paddingTop="11dp"
+                        android:paddingEnd="@dimen/standard_16"
+                        android:paddingBottom="11dp"
+                        android:text="DL1PD"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_pb"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bus_number"
+                        android:button="@drawable/bus_number"
+                        android:fontFamily="@font/inter_regular"
+                        android:paddingStart="@dimen/standard_16"
+                        android:paddingTop="11dp"
+                        android:paddingEnd="@dimen/standard_16"
+                        android:paddingBottom="11dp"
+                        android:text="DL1PB"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/standard_12"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/rg_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_gd"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="@dimen/standard_12"
+                        android:background="@drawable/bus_number"
+                        android:button="@drawable/bus_number"
+                        android:drawableStart="@drawable/ic_electric"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="DL51GD"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ev"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bus_number"
+                        android:button="@drawable/bus_number"
+                        android:drawableStart="@drawable/ic_electric"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="DL51EV"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="2dp">
+
+            <EditText
+                android:id="@+id/edit_num_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/standard_12"
+                android:background="@drawable/bus_number_edit"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_num_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/standard_12"
+                android:layout_toEndOf="@+id/edit_num_1"
+                android:background="@drawable/bus_number_edit"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_num_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/standard_12"
+                android:layout_toEndOf="@+id/edit_num_2"
+                android:background="@drawable/bus_number_edit"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_num_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/edit_num_3"
+                android:background="@drawable/bus_number_edit"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

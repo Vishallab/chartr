@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_bottom_sheet_background"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="280dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_vertical|center_horizontal|center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <ImageView
+            android:id="@+id/iv_rect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Rectangle"
+            app:srcCompat="@drawable/ic_rectangle_bottom_sheet" />
+
+        <RelativeLayout
+            android:id="@+id/rl_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_suggestion"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingEnd="@dimen/standard_16">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/standard_16"
+                android:layout_marginBottom="@dimen/standard_8"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:text="Enter Bus Number(Lasr 4 digits)"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_h2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/standard_8"
+                android:fontFamily="@font/inter_medium"
+                android:text="Like 1234 for DL 1PC 1234"
+                android:textColor="#6E6969"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_h2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="2dp">
+
+                <EditText
+                    android:id="@+id/edit_num_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="@dimen/standard_12"
+                    android:background="@drawable/bus_number_edit"
+                    android:fontFamily="@font/inter_regular"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_num_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="@dimen/standard_12"
+                    android:layout_toEndOf="@+id/edit_num_1"
+                    android:background="@drawable/bus_number_edit"
+                    android:fontFamily="@font/inter_regular"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_num_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="@dimen/standard_12"
+                    android:layout_toEndOf="@+id/edit_num_2"
+                    android:background="@drawable/bus_number_edit"
+                    android:fontFamily="@font/inter_regular"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_num_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@+id/edit_num_3"
+                    android:background="@drawable/bus_number_edit"
+                    android:fontFamily="@font/inter_regular"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

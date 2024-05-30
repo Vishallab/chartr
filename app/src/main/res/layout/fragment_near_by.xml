@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView
+        android:enabled="true"
+        android:id="@+id/mapView"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="@string/google_maps_key"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/standard_8">
+
+
+        <EditText
+            android:id="@+id/edit_destination_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_8"
+            android:background="@drawable/round_input_black_e6e6e6"
+            android:backgroundTint="#D6D3D3"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/standard_8"
+
+            android:ellipsize="end"
+            android:hint="Enter Route"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/standard_12"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingEnd="@dimen/standard_16"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/btn_current_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/white_filled_circle"
+            android:src="@drawable/ic_current_location" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/btn_current_location"
+            android:layout_alignEnd="@+id/btn_current_location"
+            android:layout_marginEnd="-6dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/white_filled_circle"
+            android:src="@drawable/ic_report" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

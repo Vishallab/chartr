@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drop_shadow"
+        android:padding="@dimen/standard_16">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_medium"
+            android:text="Chartr Wallet"
+            android:textColor="#1c2626"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_cur_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_8"
+            android:layout_toEndOf="@+id/tv_1"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="#1c2626"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_faqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_regular"
+            android:text="Home"
+            android:textColor="#828282"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/rl_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_banner"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_marginTop="@dimen/standard_16"
+                android:layout_marginEnd="@dimen/standard_16"
+                android:padding="@dimen/standard_8"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:src="@drawable/walletred">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Add Money"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_marginTop="@dimen/standard_16"
+                android:layout_marginEnd="@dimen/standard_16"
+                android:padding="@dimen/standard_8"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:src="@drawable/walletred">
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Add Money"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_avail"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="You Can Add Upto ₹ 200"
+                    android:textColor="#787878"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_info"
+                android:padding="@dimen/standard_16">
+
+
+                <TextView
+                    android:id="@+id/tv_avail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Available Balance"
+                    android:textColor="#1c2626"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_16"
+                    android:drawableStart="@drawable/ic_rupee_symbol"
+                    android:drawablePadding="@dimen/standard_8"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Enter Money"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/standard_8"
+                    android:paddingTop="@dimen/standard_16"
+                    android:paddingEnd="@dimen/standard_8"
+                    android:paddingBottom="@dimen/standard_16"
+                    android:textColor="#1c2626" />
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_money"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/standard_16"
+                    android:background="@drawable/round_button_white"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="₹50"
+                    android:textColor="#1c2626"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_money"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/standard_16"
+                    android:background="@drawable/round_button_white"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="₹100"
+                    android:textColor="#1c2626"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_money"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/standard_16"
+                    android:background="@drawable/round_button_white"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="₹200"
+                    android:textColor="#1c2626"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_1"
+                    android:layout_marginTop="@dimen/standard_16"
+                    android:background="@drawable/round_button_pis_blue"
+                    android:backgroundTint="#E3AEAE"
+                    android:text="Add Money"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/inffo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_continue"
+                    android:textSize="16sp"
+                    android:textColor="#F30707"
+                    android:text="Adding money to wallet iis not available at eh momonet. Please try again in some time" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="#101010"
+                    android:paddingTop="@dimen/standard_16"
+                    android:paddingBottom="@dimen/standard_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Transactions"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_below="@id/inffo"
+                    android:paddingStart="@dimen/standard_16"
+                    android:paddingEnd="@dimen/standard_16"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

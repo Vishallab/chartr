@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="@dimen/standard_16">
+
+        <ImageView
+            android:id="@+id/iv_three_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/three_dots"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_medium"
+            android:text="My Profile"
+            android:textColor="#1c2626"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_16">
+
+            <ImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_ellipse_blue"
+                android:padding="@dimen/standard_8"
+                app:srcCompat="@drawable/ic_occupancy_empty"
+                app:tint="#dd000000" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_profile_pic"
+                android:fontFamily="@font/mulish_bold"
+                android:textColor="#de000000"
+                android:text="Vishal Mishra"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_user_name"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_profile_pic"
+                android:fontFamily="@font/mulish_regular"
+                android:text="Number not verified"
+                android:textColor="#99000000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rl_info"
+            android:background="#eeeeee" />
+
+        <RelativeLayout
+            android:id="@+id/rl_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view_1"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_tickets_new" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_1"
+                android:fontFamily="@font/inter_regular"
+                android:text="My Tickets"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_passes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_tickets"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_ticket" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_2"
+                android:fontFamily="@font/inter_regular"
+                android:text="My Passes"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_passes"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_rupee_symbol" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_3"
+                android:fontFamily="@font/inter_regular"
+                android:text="Recent Transactions"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_transactions"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_4"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_leaderboard" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_4"
+                android:fontFamily="@font/inter_regular"
+                android:text="Leaderboard"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_saved_addresses"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_leaderboard"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_5"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_location"
+                app:tint="#dd000000" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_5"
+                android:fontFamily="@font/inter_regular"
+                android:text="My Saved Addresses"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_offers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_saved_addresses"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_6"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/white_circle"
+                app:tint="#c4c4c4" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_6"
+                android:fontFamily="@font/inter_regular"
+                android:text="Offers"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_help_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_offers"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_7"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/white_circle"
+                app:tint="#c4c4c4" />
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_7"
+                android:fontFamily="@font/inter_regular"
+                android:text="Help Center   "
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_switch_home_page"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_help_center"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_11"
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_chartr_color_logo"
+                app:tint="#dd000000" />
+
+            <TextView
+                android:id="@+id/tv_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_11"
+                android:fontFamily="@font/inter_regular"
+                android:text="Switch to older Home"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_refer_friend"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_switch_home_page"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_8"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_share"
+                app:tint="#dd000000" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_8"
+                android:fontFamily="@font/inter_regular"
+                android:text="Share app"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_rate_us"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_refer_friend"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8"
+            android:onClick="rateUs">
+
+            <ImageView
+                android:id="@+id/iv_9"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_rating"
+                app:tint="#dd000000" />
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_9"
+                android:fontFamily="@font/inter_regular"
+                android:text="Rate Us"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_rate_us"
+            android:paddingStart="@dimen/standard_16"
+            android:paddingTop="@dimen/standard_8"
+            android:paddingEnd="@dimen/standard_16"
+            android:paddingBottom="@dimen/standard_8">
+
+            <ImageView
+                android:id="@+id/iv_10"
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_chartr_color_logo" />
+
+            <TextView
+                android:id="@+id/tv_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/standard_16"
+                android:layout_toEndOf="@+id/iv_10"
+                android:fontFamily="@font/inter_regular"
+                android:text="Contact Us"
+                android:textColor="#de000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp">
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:padding="@dimen/standard_16"
+            android:text="Follow us on :"
+            android:textColor="#1c2626"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/standard_8"
+            android:layout_marginEnd="@dimen/standard_8"
+            android:layout_toEndOf="@+id/tv_follow"
+            android:contentDescription="linkedin"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/iv_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/standard_8"
+            android:layout_marginEnd="@dimen/standard_8"
+            android:layout_toEndOf="@+id/iv_linkedin"
+            android:contentDescription="instagram"
+            app:srcCompat="@drawable/ic_instagram" />
+
+        <ImageView
+            android:id="@+id/iv_github"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/standard_8"
+            android:layout_marginEnd="@dimen/standard_8"
+            android:layout_toEndOf="@+id/iv_instagram"
+            android:contentDescription="telegram"
+            app:srcCompat="@drawable/ic_github" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/standard_16"
+        android:layout_marginEnd="@dimen/standard_16"
+        android:layout_marginBottom="64dp"
+        android:text="App Version: 1.10.20(160) " />
+</RelativeLayout>

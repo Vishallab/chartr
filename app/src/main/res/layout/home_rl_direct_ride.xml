@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main_3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/standard_16"
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:id="@+id/rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/standard_8"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/round_box_blue_8dp"
+        android:backgroundTint="#ffea20"
+        android:elevation="2dp"
+        android:padding="@dimen/standard_16">
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_scooter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_new_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_box_white_8dp"
+        android:backgroundTint="#FFD63A3A"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:translationZ="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_3"
+        android:layout_marginTop="@dimen/standard_8"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Bike / Auto"
+        android:textSize="16sp" />
+</RelativeLayout>

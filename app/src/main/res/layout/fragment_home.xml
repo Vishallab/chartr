@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_56">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/standard_16"
+            app:srcCompat="@drawable/ic_chartr_combined_logo" />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/standard_16"
+            app:srcCompat="@drawable/ic_profile_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffafa"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/standard_8">
+
+            <FrameLayout
+                android:id="@+id/container_current_journey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/rl_edit_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_8"
+                android:layout_marginEnd="@dimen/standard_8"
+                android:background="@drawable/round_box_white_8dp"
+                android:paddingStart="@dimen/standard_8"
+                android:paddingEnd="@dimen/standard_8"
+                android:paddingBottom="@dimen/standard_8">
+
+                <EditText
+                    android:id="@+id/edit_destination_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_8"
+                    android:background="@drawable/round_input_black_e6e6e6"
+                    android:backgroundTint="#D6D3D3"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="@dimen/standard_8"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/standard_12"
+                    android:paddingStart="@dimen/standard_16"
+                    android:paddingEnd="@dimen/standard_16"
+                    android:hint="Where do yo want to go?"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/standard_8"
+                android:paddingTop="@dimen/standard_8"
+                android:paddingEnd="@dimen/standard_8"
+                android:paddingBottom="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/round_box_white_8dp"
+                    android:baselineAligned="false"
+                    android:paddingStart="@dimen/standard_8"
+                    android:paddingTop="@dimen/standard_8"
+                    android:paddingEnd="@dimen/standard_8"
+                    android:paddingBottom="@dimen/standard_8">
+
+                    <include
+                        android:id="@+id/buyticket"
+                        layout="@layout/home_rl_bus_ticket"
+                        android:visibility="visible"
+                        />
+
+                    <include
+                        android:id="@+id/buypass"
+                        layout="@layout/home_rl_daily_pass"
+                        android:visibility="visible"
+
+                        />
+
+                    <include
+                        android:id="@+id/rapiodbok"
+                        layout="@layout/home_rl_direct_ride" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_main_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="@dimen/standard_8"
+                            android:layout_marginEnd="2dp"
+                            android:background="@drawable/round_box_blue_8dp"
+                            android:backgroundTint="#e0f4ff"
+                            android:elevation="2dp"
+                            android:padding="@dimen/standard_16">
+
+                            <ImageView
+                                android:id="@+id/iv_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_stack" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_4"
+                            android:layout_marginTop="@dimen/standard_8"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="See All"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="@dimen/standard_16"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/iv_metro_ticketing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="metro ticketing"
+                        app:srcCompat="@drawable/metro_ticketing_poster" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_16">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/black"
+                        android:text="Near Me"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:padding="4dp"
+                        android:text="Show all" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:orientation="vertical">`
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/top_round_bar_grey"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/standard_16"
+                        android:paddingTop="@dimen/standard_12"
+                        android:paddingEnd="@dimen/standard_16"
+                        android:paddingBottom="@dimen/standard_12"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tv_bus_stop"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.75"
+                            android:drawablePadding="@dimen/standard_12"
+                            android:text="Please wait featching... \nBus stop"
+                            android:textSize="16sp"
+                            app:drawableStartCompat="@drawable/ic_bus_black_bg" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.25"
+                            android:gravity="end">
+
+                            <TextView
+                                android:id="@+id/tv_distance_bus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="502 m" />
+
+                            <ImageView
+                                android:id="@+id/iv_navigate_bus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical|center_horizontal|center|end"
+                                android:layout_marginStart="@dimen/standard_8"
+                                android:background="@drawable/ic_navigate" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_round_bar_grey"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/standard_16"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="@dimen/standard_16"
+                            android:paddingBottom="4dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:background="@color/white"
+                                android:text=" No upcoming buses at this stop "
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_see_more_bus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom_round_bar_grey"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/standard_16"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="@dimen/standard_16"
+                        android:paddingBottom="4dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tv_see_more_bus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="See More Buses"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_margin="5dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_16"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/black"
+                    android:text="Nearby"
+                    android:textSize="20sp" />
+
+                <com.google.android.gms.maps.MapView
+                    android:enabled="true"
+                    android:id="@+id/mapView"
+                    android:layout_margin="5dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:apiKey="@string/google_maps_key"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_past_ticket_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/fragment_past_ticket"></include>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_past_pass_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/homeDailyPass"
+                    layout="@layout/activity_homedailypassview"></include>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_h3">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/standard_8"
+                        android:scrollbars="none">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_banner_3"
+                                android:layout_width="300dp"
+                                android:layout_height="128dp"
+                                android:layout_marginStart="@dimen/standard_8"
+                                android:visibility="visible"
+                                android:layout_toEndOf="@+id/iv_banner_2"
+
+                                app:srcCompat="@drawable/ic_banner_wallet_1" />
+
+                            <ImageView
+                                android:id="@+id/iv_banner_2"
+                                android:layout_width="300dp"
+                                android:layout_height="128dp"
+                                android:layout_marginStart="@dimen/standard_8"
+                                android:layout_toEndOf="@+id/iv_banner_1"
+                                app:srcCompat="@drawable/auto_coming_soon" />
+
+                            <ImageView
+                                android:id="@+id/iv_banner_1"
+                                android:layout_width="300dp"
+                                android:layout_height="128dp"
+                                android:layout_marginStart="@dimen/standard_8"
+                                app:srcCompat="@drawable/discount" />
+                        </RelativeLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
