@@ -17,14 +17,14 @@ This repository contains a clone of the Chartr app, a public transportation trac
 - Custom Dialog Box
 
 
-
 ## Screenshots
 (![2024-05-31 00-55-19 (online-video-cutter com)](https://github.com/Vishallab/chartr/assets/74778363/6dd2c29b-e88c-47d6-8763-ddf1e5396561)
 
 
+| without map and bar code scanner  | with map and bar code scanner |
+|:-:|:-:|
+| ( https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6 ) | https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6 |
 
-
-https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6
 
 
 
@@ -36,8 +36,7 @@ https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1df
 
 | home scrolled | near by frag |
 |:-:|:-:|
-|![Screenshot_20240531_014401_com vishal chartr](https://github.com/Vishallab/chartr/assets/74778363/6f4193d5-c876-4dc6-a648-a6af4cbe7377) | ![Screenshot_20240531_014447_com vishal chartr](https://github.com/Vishallab/chartr/assets/74778363/e1515aa3-ce5f-4e25-82e2-6d5db82339fc)
- |
+|![Screenshot_20240531_014401_com vishal chartr](https://github.com/Vishallab/chartr/assets/74778363/6f4193d5-c876-4dc6-a648-a6af4cbe7377) | ![Screenshot_20240531_014447_com vishal chartr](https://github.com/Vishallab/chartr/assets/74778363/e1515aa3-ce5f-4e25-82e2-6d5db82339fc) |
 
 
 | ariund me frag |  wallet frag|
