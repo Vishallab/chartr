@@ -21,9 +21,13 @@ This repository contains a clone of the Chartr app, a public transportation trac
 (![2024-05-31 00-55-19 (online-video-cutter com)](https://github.com/Vishallab/chartr/assets/74778363/6dd2c29b-e88c-47d6-8763-ddf1e5396561)
 
 
-| without map and bar code scanner  | with map and bar code scanner |
-|:-:|:-:|
-| ( https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6 ) | https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6 |
+## without map and bar code scanner 
+
+ https://github.com/Vishallab/chartr/assets/74778363/9b90cd55-a955-424d-bef3-c1dfaa1f31c6 
+
+ ## with map and bar code scanner 
+
+https://github.com/Vishallab/chartr/assets/74778363/816bd410-4c56-4c4b-804f-2468dadeefd6
 
 
 
